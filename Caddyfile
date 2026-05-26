@@ -1,0 +1,22 @@
+:80 {
+    root * /srv
+    encode gzip zstd
+    file_server
+    try_files {path} /index.html
+
+    header {
+        # Security
+        X-Frame-Options "SAMEORIGIN"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "interest-cohort=()"
+
+        # Cache
+        Cache-Control "public, max-age=300, must-revalidate"
+    }
+
+    @assets {
+        path *.css *.js *.png *.jpg *.jpeg *.webp *.svg *.ico *.woff2
+    }
+    header @assets Cache-Control "public, max-age=31536000, immutable"
+}

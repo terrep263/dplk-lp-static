@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  lp:
+    build: .
+    container_name: dplk-lp-static
+    restart: unless-stopped
+    ports:
+      - "8080:80"
