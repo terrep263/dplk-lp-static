@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DPLK Factory — Stop being almost. Ship your first digital product this week.</title>
+<meta name="description" content="DPLK Factory ships the launch you couldn't. 12,000-word ebook, cover art, six bonus PDFs, sales page, and a 7-day launch playbook — from one keyword, in 11 minutes. Your first kit is free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,500;1,9..144,700&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFFFFF;
+    --bg-tint: #F8FAFC;
+    --bg-section: #F4F1EC;
+    --ink: #0A0A0A;
+    --ink-700: #1F1F1F;
+    --body: #2A2A2A;
+    --muted: #5A5A5A;
+    --hint: #8A8A8A;
+    --line: #DDD7CE;
+    --line-soft: #ECE7DD;
+    --orange: #E94824;
+    --orange-hover: #C73C1D;
+    --blue: #1E40AF;
+    --dark: #0A0A0A;
+    --dark-text: #F5F1E8;
+    --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-body: 'Inter Tight', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+    --container: 1180px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--font-body); font-size: 17px; line-height: 1.55; color: var(--body); background: var(--bg); text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+  .topbar { background: var(--ink); color: var(--dark-text); font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 24px; text-align: center; position: sticky; top: 0; z-index: 50; }
+  .topbar span { opacity: 0.7; padding: 0 10px; }
+  .topbar strong { font-weight: 500; padding: 0 10px; }
+  .topbar em { font-style: normal; color: #FF9A4C; font-weight: 500; padding: 0 10px; }
+  .brandbar { border-bottom: 1px solid var(--line); background: var(--bg); }
+  .brandbar-inner { max-width: var(--container); margin: 0 auto; padding: 22px 32px; display: flex; justify-content: space-between; align-items: center; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; }
+  .logo { font-family: var(--font-display); font-size: 22px; font-weight: 700; letter-spacing: -0.02em; color: var(--ink); }
+  .logo .factory { font-style: italic; font-weight: 400; color: var(--orange); }
+  .brandbar-meta { color: var(--muted); text-transform: uppercase; }
+  section { padding: 96px 32px; }
+  .wrap { max-width: var(--container); margin: 0 auto; }
+  .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); margin: 0 0 24px; display: inline-flex; align-items: center; gap: 12px; }
+  .label::after { content: ''; display: block; width: 80px; height: 1px; background: var(--orange); opacity: 0.5; }
+  h1, h2, h3 { font-family: var(--font-display); color: var(--ink); line-height: 1.02; letter-spacing: -0.025em; margin: 0; font-weight: 600; }
+  h1 { font-size: clamp(44px, 6vw, 84px); }
+  h2 { font-size: clamp(36px, 4.4vw, 60px); }
+  h3 { font-size: clamp(24px, 2.4vw, 32px); }
+  em.accent { color: var(--orange); font-style: italic; }
+  .hero { padding: 64px 32px 96px; border-bottom: 1px solid var(--line); }
+  .hero .wrap { max-width: 980px; }
+  .hero-eyebrow { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); margin-bottom: 28px; display: inline-block; padding: 6px 10px; border: 1px solid var(--orange); border-radius: 2px; }
+  .hero h1 { margin-bottom: 36px; }
+  .hero-sub { font-size: 19px; line-height: 1.5; color: var(--body); max-width: 720px; margin: 0 0 40px; }
+  .hero-sub strong { color: var(--ink); font-weight: 600; }
+  .form-row { display: flex; gap: 0; max-width: 560px; border: 2px solid var(--ink); background: var(--bg); margin-bottom: 14px; }
+  .form-row input { flex: 1; border: none; background: transparent; padding: 18px 20px; font-family: var(--font-body); font-size: 16px; color: var(--ink); outline: none; }
+  .form-row input::placeholder { color: var(--hint); }
+  .btn-primary { border: none; background: var(--orange); color: #fff; font-family: var(--font-body); font-weight: 600; font-size: 15px; padding: 0 26px; cursor: pointer; transition: background 120ms ease; white-space: nowrap; }
+  .btn-primary:hover { background: var(--orange-hover); }
+  .form-micro { font-family: var(--font-mono); font-size: 11px; color: var(--muted); letter-spacing: 0.04em; margin-top: 8px; }
+  .form-micro span { opacity: 0.4; padding: 0 6px; }
+  .spec { border: 1px solid var(--line); margin-top: 64px; background: var(--bg); }
+  .spec-head { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; padding: 14px 20px; border-bottom: 1px solid var(--line); color: var(--muted); display: flex; justify-content: space-between; }
+  .spec-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .spec-cell { padding: 28px 24px; border-right: 1px solid var(--line); }
+  .spec-cell:last-child { border-right: none; }
+  .spec-num { font-family: var(--font-mono); font-size: 11px; color: var(--orange); margin-bottom: 14px; letter-spacing: 0.1em; }
+  .spec-title { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 14px; letter-spacing: -0.01em; }
+  .spec-meta { font-family: var(--font-mono); font-size: 12px; line-height: 1.65; color: var(--body); }
+  .runs { background: var(--bg-tint); }
+  .runs h2 { max-width: 880px; margin-bottom: 48px; }
+  .runs h2 em { color: var(--orange); font-style: italic; }
+  .runs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .runs-cell { background: var(--bg-tint); padding: 32px 28px; }
+  .runs-num { font-family: var(--font-display); font-style: italic; font-size: 56px; color: var(--orange); font-weight: 600; line-height: 1; margin-bottom: 28px; }
+  .runs-title { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 14px; letter-spacing: -0.01em; }
+  .runs-body { font-size: 14.5px; line-height: 1.55; color: var(--body); }
+  .abandoned { background: var(--bg-section); padding: 120px 32px; }
+  .abandoned .wrap { max-width: 820px; }
+  .abandoned h2 { margin-bottom: 24px; }
+  .abandoned h2 .small { display: block; font-style: italic; color: var(--orange); font-weight: 400; font-size: 0.6em; line-height: 1.2; margin-top: 12px; }
+  .abandoned-cost { margin-top: 40px; }
+  .abandoned-cost p { font-size: 20px; line-height: 1.5; color: var(--ink-700); margin: 0 0 20px; font-weight: 400; }
+  .abandoned-cost p code { font-family: var(--font-mono); font-size: 0.85em; background: rgba(233, 72, 36, 0.1); color: var(--orange); padding: 2px 6px; border-radius: 2px; }
+  .abandoned-cost p em { font-style: italic; color: var(--ink); }
+  .abandoned-sub { font-family: var(--font-display); font-style: italic; font-size: 26px; color: var(--ink); margin: 56px 0 24px; font-weight: 500; }
+  .abandoned-body p { font-size: 18px; line-height: 1.6; margin: 0 0 18px; color: var(--body); }
+  .abandoned-body p strong { color: var(--ink); font-weight: 600; }
+  .abandoned-body p em { font-style: italic; color: var(--ink); }
+  .pattern-callout { background: var(--ink); color: var(--dark-text); padding: 24px 28px; margin: 36px 0; font-family: var(--font-display); font-size: 20px; line-height: 1.4; font-weight: 500; }
+  .pattern-callout strong { color: #FF9A4C; font-style: italic; font-weight: 600; }
+  .future-block { border: 1px solid var(--ink); padding: 40px 36px; margin: 56px 0; background: var(--bg); position: relative; }
+  .future-block::before { content: '2028'; position: absolute; top: -16px; left: 24px; background: var(--bg-section); padding: 0 12px; font-family: var(--font-mono); font-size: 14px; letter-spacing: 0.1em; color: var(--orange); font-weight: 500; }
+  .future-block h3 { font-style: italic; font-weight: 500; color: var(--ink); margin-bottom: 20px; font-size: 28px; }
+  .future-block p { font-size: 17px; line-height: 1.65; margin: 0 0 14px; color: var(--ink-700); }
+  .future-block p:last-child { margin-top: 24px; font-family: var(--font-display); font-weight: 600; font-style: italic; font-size: 22px; color: var(--ink); border-top: 1px solid var(--line); padding-top: 24px; }
+  .rescue-block { margin-top: 56px; padding: 40px 0 0; border-top: 2px solid var(--ink); }
+  .rescue-block h3 { font-family: var(--font-display); font-size: 32px; font-style: italic; color: var(--ink); margin-bottom: 24px; font-weight: 500; }
+  .rescue-block .factory-promise { font-family: var(--font-display); font-size: 28px; font-weight: 600; color: var(--ink); line-height: 1.2; margin: 0 0 24px; }
+  .rescue-block .factory-promise em { color: var(--orange); font-style: italic; }
+  .rescue-block p { font-size: 18px; line-height: 1.6; color: var(--body); margin: 0 0 16px; }
+  .rescue-block .quote-reversal { font-family: var(--font-display); font-style: italic; font-size: 24px; color: var(--ink); margin: 28px 0 32px; padding: 0; font-weight: 500; }
+  .rescue-block .quote-reversal em { color: var(--orange); }
+  .rescue-cta { display: flex; gap: 16px; align-items: stretch; margin-top: 36px; max-width: 560px; }
+  .rescue-cta .form-row { flex: 1; margin: 0; }
+  .playbook-commands { font-family: var(--font-mono); font-size: 16px; line-height: 1.7; padding: 20px 24px; background: rgba(233, 72, 36, 0.06); border-left: 3px solid var(--orange); margin: 20px 0; color: var(--ink); }
+  .playbook-commands em { font-style: normal; color: var(--orange); font-weight: 500; }
+  .walkaway { padding-bottom: 96px; }
+  .walkaway .wrap { max-width: 1180px; }
+  .walkaway h2 { margin-bottom: 14px; max-width: 820px; }
+  .walkaway h2 em { color: var(--orange); font-style: italic; }
+  .walkaway-sub { color: var(--muted); margin-bottom: 56px; font-size: 17px; max-width: 720px; }
+  .walkaway-sub strong { color: var(--ink); font-weight: 600; }
+  .screens-gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 48px; }
+  .screen-card { background: var(--bg); border: 1px solid var(--line); overflow: hidden; transition: transform 200ms ease, box-shadow 200ms ease; display: flex; flex-direction: column; }
+  .screen-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+  .screen-card-img-wrap { background: #F4F1EC; border-bottom: 1px solid var(--line); overflow: hidden; aspect-ratio: 16/12; position: relative; }
+  .screen-card img { width: 100%; height: 100%; object-fit: cover; object-position: top left; display: block; }
+  .screen-card-body { padding: 24px 24px 28px; flex: 1; }
+  .screen-card-tag { display: inline-block; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--orange); background: rgba(233, 72, 36, 0.1); padding: 4px 8px; margin-bottom: 14px; }
+  .screen-card h3 { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--ink); margin: 0 0 10px; }
+  .screen-card p { font-size: 14.5px; line-height: 1.55; color: var(--muted); margin: 0; }
+  .screen-card p strong { color: var(--ink); font-weight: 600; }
+  .walkaway-footnote { text-align: center; font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; color: var(--muted); margin-top: 8px; }
+  .walkaway-footnote em { color: var(--orange); font-style: italic; }
+  .pricing { background: var(--bg); border-top: 1px solid var(--line); }
+  .pricing h2 { margin-bottom: 14px; }
+  .pricing h2 em { color: var(--orange); font-style: italic; }
+  .pricing-sub { color: var(--muted); margin-bottom: 48px; font-size: 17px; max-width: 600px; }
+  .tier-grid { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--ink); }
+  .tier { padding: 32px 24px; border-right: 1px solid var(--line); background: var(--bg); position: relative; }
+  .tier:last-child { border-right: none; }
+  .tier.featured { background: var(--ink); color: var(--dark-text); }
+  .tier.featured .tier-name, .tier.featured .tier-price, .tier.featured .tier-feature { color: var(--dark-text); }
+  .tier.featured .tier-feature.dim { color: var(--hint); }
+  .tier-badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--orange); color: #fff; padding: 4px 12px; font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; }
+  .tier-name { font-family: var(--font-display); font-size: 24px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+  .tier-price { font-family: var(--font-display); font-size: 44px; font-weight: 700; color: var(--ink); line-height: 1; margin: 16px 0 4px; }
+  .tier-price-meta { font-family: var(--font-mono); font-size: 12px; color: var(--muted); margin-bottom: 24px; }
+  .tier.featured .tier-price-meta { color: var(--hint); }
+  .tier-feature { font-size: 14px; line-height: 1.4; color: var(--body); padding: 10px 0; border-top: 1px solid var(--line-soft); display: flex; align-items: center; gap: 8px; }
+  .tier.featured .tier-feature { border-color: rgba(255,255,255,0.08); }
+  .tier-feature.dim { color: var(--hint); }
+  .tier-feature .check { color: var(--orange); font-weight: 600; flex-shrink: 0; }
+  .tier-feature .dash { color: var(--hint); flex-shrink: 0; }
+  .tier-footnote { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-top: 24px; text-align: center; letter-spacing: 0.05em; }
+  .faq { padding-top: 96px; }
+  .faq h2 { margin-bottom: 48px; }
+  .faq-item { border-top: 1px solid var(--line); padding: 28px 0; }
+  .faq-item:last-child { border-bottom: 1px solid var(--line); }
+  .faq-q { font-family: var(--font-display); font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 12px; }
+  .faq-a { font-size: 16.5px; line-height: 1.6; color: var(--body); max-width: 820px; }
+  .faq-a code { font-family: var(--font-mono); font-size: 0.88em; background: rgba(233, 72, 36, 0.1); color: var(--orange); padding: 1px 5px; border-radius: 2px; }
+  .finale { background: var(--ink); color: var(--dark-text); padding: 120px 32px; }
+  .finale .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+  .finale-left h2 { color: var(--dark-text); font-size: clamp(48px, 5.5vw, 84px); line-height: 1; margin-bottom: 24px; }
+  .finale-left h2 em { color: #F7C846; font-style: italic; font-weight: 500; }
+  .finale-left h2 .free { color: var(--orange); font-style: italic; font-weight: 600; }
+  .finale-left p { color: rgba(245, 241, 232, 0.7); font-size: 17px; line-height: 1.5; max-width: 480px; }
+  .finale-right .form-row { border-color: var(--dark-text); background: var(--ink); }
+  .finale-right .form-row input { color: var(--dark-text); }
+  .finale-right .form-row input::placeholder { color: rgba(245,241,232,0.4); }
+  .finale-right .form-micro { color: rgba(245, 241, 232, 0.5); margin-top: 10px; }
+  .finale-right .form-micro span { color: rgba(245,241,232,0.3); }
+  footer { background: var(--ink); border-top: 1px solid #1a1a1a; color: rgba(245,241,232,0.5); padding: 28px 32px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; }
+  footer .wrap { display: flex; justify-content: space-between; align-items: center; }
+  footer a { color: rgba(245,241,232,0.7); text-decoration: none; margin-left: 24px; }
+  footer a:hover { color: var(--dark-text); }
+  @media (max-width: 980px) {
+    section { padding: 64px 24px; }
+    .spec-grid, .runs-grid, .tier-grid, .screens-gallery { grid-template-columns: 1fr 1fr; }
+    .screens-gallery { gap: 16px; }
+    .finale .wrap { grid-template-columns: 1fr; gap: 48px; }
+  }
+  @media (max-width: 580px) {
+    section { padding: 56px 20px; }
+    .topbar { font-size: 9px; padding: 8px 16px; }
+    .topbar span { padding: 0 4px; }
+    .spec-grid, .runs-grid, .tier-grid, .screens-gallery { grid-template-columns: 1fr; }
+    .spec-cell, .runs-cell, .tier { border-right: none; border-bottom: 1px solid var(--line); }
+    .spec-cell:last-child, .tier:last-child, .runs-cell:last-child { border-bottom: none; }
+    .form-row { flex-direction: column; }
+    .form-row input { border-bottom: 1px solid var(--line); }
+    .btn-primary { padding: 16px; width: 100%; }
+  }
+  .mockup-notice { background: #FFFBEB; border-bottom: 1px solid #F59E0B; padding: 8px 24px; text-align: center; font-family: var(--font-mono); font-size: 11px; color: #92400E; letter-spacing: 0.04em; }
+</style>
+</head>
+<body>
+<div class="mockup-notice">MOCKUP — POWER VOICE V2 + REAL APP SCREENSHOTS — FORM IS INERT</div>
+<div class="topbar"><strong>First kit free</strong><span>·</span><span>No card</span><span>·</span><em>Built in 11 minutes</em><span>·</span><span>Yours forever</span></div>
+<div class="brandbar"><div class="brandbar-inner"><div class="logo">DPLK <span class="factory">factory</span></div><div class="brandbar-meta">DIGITAL PRODUCT FACTORY · ATLV SOLUTIONS · USA</div></div></div>
+
+<section class="hero"><div class="wrap">
+  <div class="hero-eyebrow">STOP BEING "ABOUT TO LAUNCH"</div>
+  <h1>You said you'd ship <em class="accent">in March.</em><br>It's been six months.</h1>
+  <p class="hero-sub"><strong>DPLK Factory ships the launch you couldn't.</strong> 12,000-word ebook. Cover. Six bonuses. Sales page. Launch playbook with daily commands. From one keyword. <strong>In 11 minutes.</strong> First kit free. No card. We don't tell you to "think about posting" — we tell you what to post Day 1, Day 2, Day 3, through Day 7.</p>
+  <form class="form-row" onsubmit="event.preventDefault(); alert('Mockup — form is inert.'); return false;"><input type="email" placeholder="you@email.com"><button type="submit" class="btn-primary">Ship my first kit →</button></form>
+  <div class="form-micro">Free<span>·</span>No card<span>·</span>Sign in with Google<span>·</span>You own everything</div>
+  <div class="spec"><div class="spec-head"><span>SPEC SHEET / KIT-01</span><span>WHAT'S IN A KIT</span></div><div class="spec-grid">
+    <div class="spec-cell"><div class="spec-num">01</div><div class="spec-title">Ebook</div><div class="spec-meta">10 chapters<br>~12,000 words<br>DOCX + EPUB</div></div>
+    <div class="spec-cell"><div class="spec-num">02</div><div class="spec-title">Cover Art</div><div class="spec-meta">AI-generated<br>Print + digital<br>3 variants</div></div>
+    <div class="spec-cell"><div class="spec-num">03</div><div class="spec-title">Bonus Stack</div><div class="spec-meta">6 assets<br>Checklist, swipes,<br>workbook, scripts</div></div>
+    <div class="spec-cell"><div class="spec-num">04</div><div class="spec-title">Launch Playbook</div><div class="spec-meta">7-day plan<br>Daily commands<br>TikTok + email + ads</div></div>
+  </div></div>
+</div></section>
+
+<section class="runs"><div class="wrap">
+  <div class="label">HOW THE FACTORY RUNS</div>
+  <h2>Four steps from one word to <em>shippable product.</em></h2>
+  <div class="runs-grid">
+    <div class="runs-cell"><div class="runs-num">01</div><div class="runs-title">Type a keyword</div><div class="runs-body">"Stress relief," "side hustle," "macro photography" — any niche you can sell into.</div></div>
+    <div class="runs-cell"><div class="runs-num">02</div><div class="runs-title">AI researches</div><div class="runs-body">Live web search pulls trends, pain points, and competitor angles for your topic.</div></div>
+    <div class="runs-cell"><div class="runs-num">03</div><div class="runs-title">Factory builds</div><div class="runs-body">Outline → chapters → cover → bonuses → sales page → launch plan. All assembled in parallel.</div></div>
+    <div class="runs-cell"><div class="runs-num">04</div><div class="runs-title">You download</div><div class="runs-body">Polished DOCX, EPUB, PNG, PDF. Yours to sell, gift, or list. No watermark. No subscription required to keep them.</div></div>
+  </div>
+</div></section>
+
+<section class="abandoned"><div class="wrap">
+  <div class="label">THE LAUNCH YOU ABANDONED</div>
+  <h2>14 months. Six products started. Zero shipped.<span class="small">Want to know what those 14 months actually cost you?</span></h2>
+  <div class="abandoned-cost">
+    <p>The <strong>187 hours</strong> you spent "outlining" instead of writing.</p>
+    <p>The <strong>$2,400</strong> in courses you bought to "get ready" — that you've watched maybe twice.</p>
+    <p>The Saturday mornings you'll never get back, when you opened <code>ebook_v3_FINAL.docx</code>, stared at it, made coffee, then watched YouTube for two hours and called it "research."</p>
+    <p>The peer in your DMs who started <em>six months after you</em> and just hit $4K MRR.</p>
+    <p>The kid you told you'd "make some side money for college" — who's now <em>in</em> college.</p>
+    <p>The same conversation with your spouse: <em>"I'm almost ready to launch."</em> For the eighth month in a row.</p>
+  </div>
+  <div class="abandoned-sub">Here's the part nobody named for you.</div>
+  <div class="abandoned-body">
+    <p>You're not stuck because you're lazy. You're stuck in a feedback loop nobody warned you about:</p>
+    <div class="pattern-callout">Starting feels like progress. Researching feels like work. Buying a course feels like commitment.</div>
+    <p>Every one of those activities gives your brain the same dopamine hit as actually shipping — <strong>without the risk of being seen and judged</strong>. So you keep doing them. Forever.</p>
+    <p>That's not a strategy problem. That's an <strong>addiction to <em>almost</em>.</strong></p>
+    <p>And it's been 14 months.</p>
+  </div>
+  <div class="abandoned-sub">What you're actually losing isn't money. It's slope.</div>
+  <div class="abandoned-body">
+    <p>The creator who started 12 months ago and shipped 8 products is charging $97 each. Next year, $297. The year after, $497. By year three they're not a creator — they're a brand.</p>
+    <p>You didn't lose one launch. You lost the <strong>compounding.</strong></p>
+    <p>Every month you stay in <em>almost</em>, that gap widens. The runway shortens. The savings get smaller. The version of yourself who shipped exists in a parallel universe you keep voting against.</p>
+  </div>
+  <div class="future-block">
+    <h3>Now picture it's 2028.</h3>
+    <p>You're three years older. The product you've been "about to launch" since 2025 is still on your hard drive. Still <code>v3</code>. Still no chapter 8.</p>
+    <p>You stopped telling people you're "working on something." It's easier that way.</p>
+    <p>The peer who passed you sold his audience and moved to Lisbon. The kid you said you'd "earn some side money for" graduated. Your spouse stopped asking what you do on Saturdays.</p>
+    <p>You scroll past someone's TikTok ad for a tool that builds digital products in 11 minutes. You think <em>"I almost tried that one once."</em></p>
+    <p>You scroll on.</p>
+    <p>Three more years go by.</p>
+    <p>The launches you didn't make weren't taken from you. You kept choosing the easier choice, one Saturday at a time, until there were no Saturdays left to choose with.</p>
+    <p>That's the version of you reading this and not clicking.</p>
+  </div>
+  <div class="rescue-block">
+    <h3>Here's what stops today.</h3>
+    <div class="factory-promise">DPLK Factory finishes what you couldn't. From one keyword. <em>In 11 minutes.</em></div>
+    <p>Topic, chosen. Outline, written. 12,000-word ebook, drafted and edited. Cover, generated. Six bonuses, built. Sales page, scripted. Seven-day playbook with daily commands.</p>
+    <p>Not <code>v3</code>. Not "almost done." <strong>Done.</strong></p>
+    <p>You type one word. We hand you a complete launch. You ship it before bed.</p>
+    <p>The playbook doesn't suggest. It commands:</p>
+    <div class="playbook-commands"><em>Day 1:</em> Post this on LinkedIn.<br><em>Day 2:</em> Send this email to your list.<br><em>Day 3:</em> Run this ad with this hook.<br>Through Day 7.</div>
+    <p>First kit free. No card. Sign in with Google.</p>
+    <div class="quote-reversal">The next time someone asks how it's going, you don't say <em>"still working on it."</em><br>You say <em>"launched it last week. Working on the next one."</em></div>
+    <div class="rescue-cta"><form class="form-row" onsubmit="event.preventDefault(); alert('Mockup — form is inert.'); return false;"><input type="email" placeholder="you@email.com"><button type="submit" class="btn-primary">Stop being almost →</button></form></div>
+    <div class="form-micro" style="margin-top:10px;">Free<span>·</span>No card<span>·</span>Sign in with Google</div>
+  </div>
+</div></section>
+
+<section class="walkaway"><div class="wrap">
+  <div class="label">WHAT YOU WALK AWAY WITH</div>
+  <h2>Not a draft. Not a template. <em>A finished kit.</em></h2>
+  <p class="walkaway-sub">These are <strong>real screenshots from inside the Factory.</strong> Every kit you generate ships with this exact set of files, strategy, and launch commands — generated from your one keyword in 11 minutes.</p>
+  <div class="screens-gallery">
+    <div class="screen-card"><div class="screen-card-img-wrap"><img src="./images/screenshot-downloads.jpg" alt="DPLK Factory Downloads tab" loading="lazy"></div><div class="screen-card-body"><span class="screen-card-tag">DOWNLOADS</span><h3>10 files. Every kit. No exceptions.</h3><p>Ebook (DOCX), AI cover (PNG), six bonus PDFs, strategy doc (DOCX + PDF). <strong>Download the ZIP or grab files individually.</strong> No watermark. No subscription required to keep them.</p></div></div>
+    <div class="screen-card"><div class="screen-card-img-wrap"><img src="./images/screenshot-launch.jpg" alt="DPLK Factory Launch Plan tab" loading="lazy"></div><div class="screen-card-body"><span class="screen-card-tag">LAUNCH PLAN</span><h3>7 days, mapped out. Post this. Send this. Run this ad.</h3><p>A day-by-day playbook telling you <strong>exactly</strong> what to do across LinkedIn, TikTok, email, webinar, and retargeting. Specific assets. Specific channels. Specific goals. No more "be active."</p></div></div>
+    <div class="screen-card"><div class="screen-card-img-wrap"><img src="./images/screenshot-sales.jpg" alt="DPLK Factory Sales Assets tab" loading="lazy"></div><div class="screen-card-body"><span class="screen-card-tag">SALES ASSETS</span><h3>Hooks, posts, ad copy — drafted, ready to paste.</h3><p>Landing page headline + subhead + bullets + CTA. TikTok/Reels hooks. Short-form posts. Gumroad listing copy. <strong>One click to copy.</strong> Drop into your tools and go.</p></div></div>
+  </div>
+  <div class="walkaway-footnote">↑ <em>screenshots from inside DPLK Factory · same view every customer sees on every kit</em></div>
+</div></section>
+
+<section class="pricing"><div class="wrap">
+  <div class="label">PRICING</div>
+  <h2>Pick the engine size.</h2>
+  <p class="pricing-sub">Free if one launch a month is your pace. More if you mean to scale. No annual lock. No card to start. Cancel inside the app — no retention call.</p>
+  <div class="tier-grid">
+    <div class="tier"><div class="tier-name">Free</div><div class="tier-price">$0</div><div class="tier-price-meta">forever</div><div class="tier-feature"><span class="check">✓</span> 1 complete kit / month</div><div class="tier-feature"><span class="check">✓</span> 7-Day Launch Playbook</div><div class="tier-feature"><span class="check">✓</span> Commercial use rights</div><div class="tier-feature dim"><span class="dash">—</span> DPLK training program</div><div class="tier-feature dim"><span class="dash">—</span> Cancel anytime</div></div>
+    <div class="tier"><div class="tier-name">Starter</div><div class="tier-price">$29</div><div class="tier-price-meta">per month</div><div class="tier-feature"><span class="check">✓</span> 10 kits / month</div><div class="tier-feature"><span class="check">✓</span> 7-Day Launch Playbook</div><div class="tier-feature"><span class="check">✓</span> Commercial use rights</div><div class="tier-feature dim"><span class="dash">—</span> DPLK training program</div><div class="tier-feature"><span class="check">✓</span> Cancel anytime</div></div>
+    <div class="tier featured"><div class="tier-badge">Most Popular</div><div class="tier-name">Growth</div><div class="tier-price">$49</div><div class="tier-price-meta">per month</div><div class="tier-feature"><span class="check">✓</span> 30 kits / month</div><div class="tier-feature"><span class="check">✓</span> 7-Day Launch Playbook</div><div class="tier-feature"><span class="check">✓</span> Commercial use rights</div><div class="tier-feature"><span class="check">✓</span> <strong>DPLK training program</strong></div><div class="tier-feature"><span class="check">✓</span> Cancel anytime</div></div>
+    <div class="tier"><div class="tier-name">Unlimited</div><div class="tier-price">$99</div><div class="tier-price-meta">per month</div><div class="tier-feature"><span class="check">✓</span> Unlimited kits</div><div class="tier-feature"><span class="check">✓</span> 7-Day Launch Playbook</div><div class="tier-feature"><span class="check">✓</span> Commercial use rights</div><div class="tier-feature"><span class="check">✓</span> <strong>DPLK training program</strong></div><div class="tier-feature"><span class="check">✓</span> Cancel anytime</div></div>
+  </div>
+  <div class="tier-footnote">Month-to-month. Cancel inside the app. No retention call. <em style="color:var(--orange); font-style:italic;">[CONFIRM]</em> DPLK training program status — live now / coming soon</div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+  <div class="label">COMMON QUESTIONS</div>
+  <h2>The honest answers.</h2>
+  <div class="faq-item"><div class="faq-q">Do I really own what comes out?</div><div class="faq-a">Yes. You hold full commercial rights to every file in your kit — sell it, gift it, modify it, list it on your store. No watermark. No license fee. We don't take a cut. If you ever cancel, your previously generated kits stay yours.</div></div>
+  <div class="faq-item"><div class="faq-q">Is it free, or is there a catch?</div><div class="faq-a">Your first complete kit costs $0 and requires no credit card. Subscriptions ($29 / $49 / $99) only kick in if you want more than one kit per month, or you want the DPLK training program. Stay on free forever if one kit a month is your pace.</div></div>
+  <div class="faq-item"><div class="faq-q">What if the ebook reads like AI slop?</div><div class="faq-a">It won't read like ChatGPT bullet vomit — we use structured prompts with live web search for your specific keyword, then format the output through editorial templates that human editors would use. That said: it's a starting point, not a final draft. You'll edit it to add your voice and personal stories. Expect 80% there, 20% your work.</div></div>
+  <div class="faq-item"><div class="faq-q">How fast is "11 minutes"?</div><div class="faq-a">Average kit takes 11–12 minutes start to finish. Some go faster (8–9 min for narrow keywords). Some are slower (14–16 min for broad ones). <em style="color:var(--orange);">[CONFIRM]</em> You'll see a real-time progress indicator while it builds. You can close the tab — we'll email you when it's ready.</div></div>
+  <div class="faq-item"><div class="faq-q">I'm not technical. Can I actually launch one of these?</div><div class="faq-a">That's exactly who the DPLK training program is built for. We walk you through Stripe/Gumroad setup, hosting your ebook, taking payments, running your first TikTok ad, and emailing your buyer list — step by step, video by video. If you can use Notion, you can launch a DPLK kit.</div></div>
+  <div class="faq-item"><div class="faq-q">Can I use this for client work?</div><div class="faq-a">Yes — Growth and Unlimited tiers include commercial agency rights. Generate kits for clients, brand them as your own work, charge whatever you'd like. Some users sell their kits to clients for $500–$2,000 each. Their tier pays for itself on one client.</div></div>
+</div></section>
+
+<section class="finale"><div class="wrap">
+  <div class="finale-left"><h2>One word in.<br><em>One launch out.</em><br><span class="free">Yours.</span></h2><p>Email. Google sign-in. 11 minutes. A complete kit in your inbox, ready to ship. Owned outright. No watermark, no royalty, no permission needed.</p></div>
+  <div class="finale-right"><form class="form-row" onsubmit="event.preventDefault(); alert('Mockup — form is inert.'); return false;"><input type="email" placeholder="you@email.com"><button type="submit" class="btn-primary">Ship my first kit →</button></form><div class="form-micro">Free<span>·</span>No card<span>·</span>You own everything<span>·</span>Cancel anytime if you upgrade</div></div>
+</div></section>
+
+<footer><div class="wrap"><div>© DPLK FACTORY · A PRODUCT OF ATLV SOLUTIONS</div><div><a href="#">TERMS</a><a href="#">PRIVACY</a><a href="#">REFUND POLICY</a></div></div></footer>
+
+</body>
+</html>
