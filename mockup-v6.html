@@ -110,6 +110,14 @@
   .rescue-cta .form-row { flex: 1; margin: 0; }
   .playbook-commands { font-family: var(--font-mono); font-size: 16px; line-height: 1.7; padding: 20px 24px; background: rgba(233, 72, 36, 0.06); border-left: 3px solid var(--orange); margin: 20px 0; color: var(--ink); }
   .playbook-commands em { font-style: normal; color: var(--orange); font-weight: 500; }
+  .walkaway-intro { padding-bottom: 0; }
+  .walkaway-intro .wrap { max-width: 1180px; }
+  .walkaway-intro h2 { margin-bottom: 14px; max-width: 820px; }
+  .walkaway-intro h2 em { color: var(--orange); font-style: italic; }
+  .walkaway-intro .walkaway-sub { color: var(--muted); font-size: 17px; max-width: 720px; margin: 0; }
+  .walkaway-intro .walkaway-sub strong { color: var(--ink); font-weight: 600; }
+  .banner-band { background: #0A0A0A; padding: 80px 32px; margin: 96px 0 0 0; width: 100%; display: flex; justify-content: center; align-items: center; }
+  .banner-img { display: block; max-width: 800px; width: 100%; height: auto; box-shadow: 0 24px 60px rgba(0,0,0,0.5); }
   .walkaway { padding-bottom: 96px; }
   .walkaway .wrap { max-width: 1180px; }
   .walkaway h2 { margin-bottom: 14px; max-width: 820px; }
@@ -187,12 +195,13 @@
     .form-row { flex-direction: column; }
     .form-row input { border-bottom: 1px solid var(--line); }
     .btn-primary { padding: 16px; width: 100%; }
+    .banner-band { padding: 48px 16px; margin-top: 64px; }
   }
   .mockup-notice { background: #FFFBEB; border-bottom: 1px solid #F59E0B; padding: 8px 24px; text-align: center; font-family: var(--font-mono); font-size: 11px; color: #92400E; letter-spacing: 0.04em; }
 </style>
 </head>
 <body>
-<div class="mockup-notice">MOCKUP — POWER VOICE V2 + REAL APP SCREENSHOTS — FORM IS INERT</div>
+<div class="mockup-notice">MOCKUP — POWER VOICE V2 + REAL APP SCREENSHOTS + LAUNCH KIT BANNER — FORM IS INERT</div>
 <div class="topbar"><strong>First kit free</strong><span>·</span><span>No card</span><span>·</span><em>Built in 11 minutes</em><span>·</span><span>Yours forever</span></div>
 <div class="brandbar"><div class="brandbar-inner"><div class="logo">DPLK <span class="factory">factory</span></div><div class="brandbar-meta">DIGITAL PRODUCT FACTORY · ATLV SOLUTIONS · USA</div></div></div>
 
@@ -272,10 +281,23 @@
   </div>
 </div></section>
 
-<section class="walkaway"><div class="wrap">
+<!-- WALKAWAY — INTRO + KIT INVENTORY -->
+<section class="walkaway-intro"><div class="wrap">
   <div class="label">WHAT YOU WALK AWAY WITH</div>
   <h2>Not a draft. Not a template. <em>A finished kit.</em></h2>
-  <p class="walkaway-sub">These are <strong>real screenshots from inside the Factory.</strong> Every kit you generate ships with this exact set of files, strategy, and launch commands — generated from your one keyword in 11 minutes.</p>
+  <p class="walkaway-sub"><strong>10 tools. 1 kit.</strong> Every generation ships with the complete deliverable inventory — the lead magnet, cover, six PDF assets, and the revenue strategy doc in both formats. Then the in-app launch playbook tells you what to post, when.</p>
+</div></section>
+
+<!-- FULL-BLEED LAUNCH KIT BANNER -->
+<div class="banner-band">
+  <img class="banner-img" src="./images/launch-kit-banner.jpg" alt="Digital Product Launch Kit — 10 tools: 10-chapter ebook, AI cover image, quick-win checklist, swipe file, resource guide, cheat sheet, workbook, upsell sales page, revenue kit strategy in DOCX and PDF" loading="lazy">
+</div>
+
+<!-- WALKAWAY — REAL APP SCREENSHOTS -->
+<section class="walkaway"><div class="wrap">
+  <div class="label">AND HERE'S WHAT THE APP LOOKS LIKE</div>
+  <h2>Generate one. <em>See it live in 11 minutes.</em></h2>
+  <p class="walkaway-sub">These are <strong>real screenshots from inside the Factory.</strong> Same view every customer sees on every kit.</p>
   <div class="screens-gallery">
     <div class="screen-card"><div class="screen-card-img-wrap"><img src="./images/screenshot-downloads.jpg" alt="DPLK Factory Downloads tab" loading="lazy"></div><div class="screen-card-body"><span class="screen-card-tag">DOWNLOADS</span><h3>10 files. Every kit. No exceptions.</h3><p>Ebook (DOCX), AI cover (PNG), six bonus PDFs, strategy doc (DOCX + PDF). <strong>Download the ZIP or grab files individually.</strong> No watermark. No subscription required to keep them.</p></div></div>
     <div class="screen-card"><div class="screen-card-img-wrap"><img src="./images/screenshot-launch.jpg" alt="DPLK Factory Launch Plan tab" loading="lazy"></div><div class="screen-card-body"><span class="screen-card-tag">LAUNCH PLAN</span><h3>7 days, mapped out. Post this. Send this. Run this ad.</h3><p>A day-by-day playbook telling you <strong>exactly</strong> what to do across LinkedIn, TikTok, email, webinar, and retargeting. Specific assets. Specific channels. Specific goals. No more "be active."</p></div></div>
